@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo&family=Goudy+Bookletter+1911&family=Lobster&family=Manrope:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<style>
+		*{padding: 0;margin: 0;box-sizing: border-box;}
+		body{background-image: url(img/backgroundcake.jpg);background-size: cover;}
+		/*header*/
+		header{min-height: 800px;width: 100%;position: relative;}
+		#header-text{width: 400px;position: absolute;top: 10%;left: 10%;min-height: 100px;padding: 10px;line-height: 50px;animation: logocolor 3s infinite;/*background-image: linear-gradient(to right, white, white, #D06900);*/}
+		#header-text img{width: 150px;height: 150px;float: left;padding: 10px;}
+		#header-text h1{font-size: 40px;color: #7F25D9;font-family: 'Goudy Bookletter 1911', serif;padding: 5px;}
+		#slideshow {
+			overflow: hidden;
+			min-height: 800px;
+			margin: 0 auto;
+			animation: slide 5s infinite;
+			background-size: cover;
+		}
+		@keyframes slide{
+			0%{background-image:url(img/almondcookie.jpg);}
+			25%{background-image:url(img/applemuffin.jpg);}
+			50%{background-image: url(img/chiffon.jpg);}
+			75%{background-image: url(img/coffeebuns.jpg);}
+			100%{background-image:url(img/almondcookie.jpg);}
+		}
+		@keyframes logocolor {
+			0%{background-image: linear-gradient(to right, white, white, #D06900);}
+			25%{background-image: linear-gradient(to right, white, #D06900, white);}
+			50%{background-image: linear-gradient(to right, #D06900, white, white);}
+			75%{background-image: linear-gradient(to right, white, #D06900, white);}
+			100%{background-image: linear-gradient(to right, white, white, #D06900);}
+		}
+		/*header*/
+		/*nav*/
+		nav{position: relative;top: -100px;background: rgba(250,200,0,0.5);width:100%;min-height:100px;}
+		nav li{width: 180px;height: 50px;border: 2px double #2407E7; border-radius: 10px;text-align: center; margin: 0 20px;line-height: 25px; font-size: 20px;font-wight: bold;}
+		nav a{text-decoration: none;color: brown;}
+		nav li:hover{background:#F7900A;border: #F7900A;}
+		nav li:hover a{color: blue;}
+		/*nav*/
+	</style>
+	<title>MY BAKERY ROUTE</title>
+</head>
+<body>
+	<header>
+		<div id="header-text">
+			<a href="#"><img src="img/logo.jpg" alt="logo"></a>
+			<h1>MY BAKERY ROUTE</h1>
+		</div >
+		<div class="container" id="slideshow">
+  			
+		</div>
+	</header>
+	<nav>
+		
+			<ul class="nav justify-content-center">
+				<li class="nav-item my-3">
+					<a class="nav-link" href="#joys">Joys of Bakery</a>
+				</li>
+				<li class="nav-item my-3">
+					<a class="nav-link" href="#material">Materials</a>
+				</li>
+				<li class="nav-item my-3">
+					<a class="nav-link" href="#learning">Learning</a>
+				</li>
+				<li class="nav-item my-3">
+					<a class="nav-link" href="#future">Route to Future</a>
+				</li>
+				<li class="nav-item my-3">
+					<a class="nav-link" href="#chefs">
+						Contact Chefs
+					</a>
+				</li>
+			</ul>
+		
+	</nav>
+	<section id="joys" style="background:brown;width:100%;min-height:500px;">
+		Joys of Bakery: dairy about baking
+	</section>
+	<section id="material" style="background:#5B00EF;width:100%;min-height:500px;">
+		Materials and equipments
+	</section>
+	<section id="learning" style="background:#29FB0A;width:100%;min-height:500px;">
+		wwherre to lear bkaing
+	</section>
+	<section id="future" style="background:#E19355;width:100%;min-height:500px;">
+		What to do, update information
+	</section>
+	<section id="chefs" style="background:#6D008C;width:100%;min-height:500px;">
+		Contact forms.
+	</section>
+</body>
+</html>
